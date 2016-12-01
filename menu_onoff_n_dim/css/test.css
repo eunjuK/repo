@@ -1,0 +1,72 @@
+html, body, div, h1, ul, li {
+	margin: 0;
+	padding: 0;
+}
+#mask {
+	position: absolute;
+	background-color: #000;
+	display: none;
+	left: 0;
+	top: 0;
+	z-index: 99;
+}
+header {
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	background: #333;
+	color:#fff;
+	z-index: 1;
+}
+#btn_open, #btn_close {
+	height: 30px;
+	top: 10px;
+	cursor: pointer;
+	border: 0;
+}
+#btn_open {
+	width: 50px;
+	position: absolute;
+	left: 10px;
+	z-index: 5;
+}
+#effect {
+	background: #787;
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	left: -250px;
+	top:0px;
+	z-index: 99999;
+}
+.logo {
+	text-align: center;
+}
+#content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+	width: 250px;
+	height: 90vh;
+}
+#content ul {
+	list-style-type: none;
+}
+#content ul li a {
+	display: block;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	padding: 5px;
+}
+#content ul li a:hover {
+	color: #d52;
+}
+#btn_close {
+	width: 30px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
