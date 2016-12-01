@@ -2,14 +2,7 @@ html, body, div, h1, ul, li {
 	margin: 0;
 	padding: 0;
 }
-#mask {
-	position: absolute;
-	background-color: #000;
-	display: none;
-	left: 0;
-	top: 0;
-	z-index: 99;
-}
+/* header */
 header {
 	position: fixed;
 	height: 50px;
@@ -30,6 +23,14 @@ header {
 	left: 10px;
 	z-index: 5;
 }
+#mask {
+	position: absolute;
+	background-color: #000;
+	display: none;
+	left: 0;
+	top: 0;
+	z-index: 99;
+}
 #effect {
 	background: #787;
 	width: 250px;
@@ -47,7 +48,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	float: left;
+/*	float: left;*/
 	width: 250px;
 	height: 90vh;
 }
@@ -69,4 +70,29 @@ header {
 	position: absolute;
 	top: 10px;
 	right: 10px;
+}
+
+/* main */
+main {
+	padding-top: 50px;
+}
+h1 {
+	text-align: center;
+	padding: 20px;
+}
+.btn_box {
+	width: 150px;
+	display: flex;
+	margin: 0 auto;
+	/*border: 2px solid #342;*/
+	padding: 20px 10px;
+}
+[class^="align-"] {
+	padding: 5px 10px;
+	margin: 0 auto;
+}
+.textBox {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
 }

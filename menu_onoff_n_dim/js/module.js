@@ -110,4 +110,32 @@ function wrapWindowByMask() {
 })(this, this.jQuery);
 
 
+/* ---------------------------------------
+ * 	text align (글 정렬)
+ *
+ * 	2016.12.01
+ * 	@eunju.K
+ * ------------------------------------ */
+ function textAlignCss(align) {
+ 	var textBox = $('.textBox');
 
+ 	// console.log(align);
+ 	textBox.css({
+		'text-align' : align
+	});
+ }
+
+ (function(global, $) {
+	'use strict';
+
+	var left = $('.align-left');
+	var center = $('.align-center');
+	
+	left.on('click', function(){
+		textAlignCss('left');
+	});
+
+	center.on('click', function() {
+		textAlignCss('center');
+	});	
+})(this, this.jQuery);
